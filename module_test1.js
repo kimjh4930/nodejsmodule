@@ -4,11 +4,8 @@
 
 var user = require('./user1');
 
-console.dir(user);
-
-
 function showUser(){
-	return user().name + ', No Group';
-};
+	return user.gerUser().name + ',' + user.group.name;
+}
 
 console.log('사용자정보 : %s', showUser());
